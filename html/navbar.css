@@ -1,0 +1,38 @@
+.logo {
+  font-family: "Monoton";
+  float: left;
+  font-size: 1.5em;
+}
+
+header {
+  background-color: #4a4093;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Montserrat", sans-ser;
+}
+
+.navbar {
+  background-color: #4a4093;
+  z-index: 10;
+}
+
+.nav-item {
+  z-index: 10;
+}
+.nav-item:hover {
+  color: #f2b577;
+  background-color: rgba(17, 12, 51, 0.7254901961);
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+.nav-item.active {
+  color: #f6cea6;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  font: bold;
+}/*# sourceMappingURL=navbar.css.map */

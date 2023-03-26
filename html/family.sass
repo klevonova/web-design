@@ -1,0 +1,74 @@
+@import "navbar"
+@import "about"
+$additional: #7baaa4
+
+body
+    box-sizing: border-box
+    color: $bgcolor
+
+main 
+  margin: 0 auto
+  padding: 0px
+
+  @media only screen and (max-width: 768px) 
+   // padding: 10px
+
+  h1
+    padding: 20px  
+
+.row
+    margin: 0 auto
+    
+
+
+.family-ab 
+    justify-content: center
+    align-items: center
+    padding: 3%
+   
+h2 
+  margin-bottom: 10px
+
+
+form 
+  display: flex
+  flex-direction: column
+  max-width: 400px
+  margin-bottom: 20px     
+
+.list-group-item-action
+    //background-color: $bglight
+
+    &:hover 
+        background-color: darken($bglight, 8%)
+        border: darken($bglight, 10%) 
+        transition: all 0.3s ease
+
+
+input[type="text"]
+  padding: 10px
+  border-radius: 10px
+  width: 100%
+  box-sizing: border-box
+
+.member
+    @include button-bg($bgcolor)
+    margin-bottom: 10px    
+
+.code-add
+    @extend .member
+    margin-top: 10px        
+
+h5 
+    color: $bgcolor
+
+    
+
+small
+    color: #08a691
+
+.trans-b    
+    @include button-bg(#ff6b6c)  
+
+
+ 

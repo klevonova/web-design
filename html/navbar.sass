@@ -1,0 +1,42 @@
+$bgcolor: #4a4093  
+$textcolor: #ed9b49
+$fontsize: 18px
+$basic-font-family: 'Montserrat', sans-ser
+
+.logo        
+    font-family: 'Monoton'
+    float: left
+    font-size: 1.5em
+
+header
+    background-color: $bgcolor
+    height: 70px   
+    justify-content: space-between
+    align-items: center
+    //color: $textcolor
+
+body 
+  font-size: $fontsize
+  font-family: $basic-font-family
+
+.navbar
+     background-color: $bgcolor
+     z-index: 10
+     //color: $textcolor
+
+.nav-item 
+    z-index: 10
+    //color: $textcolor
+    
+    &:hover 
+      color: lighten($textcolor, 10%)
+      background-color: darken(#1e165cb9 , 10%)
+      transition: all 0.3s ease
+      border-radius: 8px
+    
+    &.active 
+      color: lighten($textcolor, 20%)
+      //background-color: darken(#1e165cb9 , 14%)
+      transition: all 0.3s ease
+      border-radius: 8px    
+      font: bold

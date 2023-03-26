@@ -1,0 +1,82 @@
+@import "about"
+  
+//$bgcolor: #4a4093
+//$textcolor: #ed9b49
+//$basic-font-family: 'Montserrat', sans-serif
+
+@media only screen and (max-width: 767px) 
+        /* Adjust styles for screens smaller than 768px */
+        .text-center-signin 
+          font-size: 24px 
+        //.signin-container 
+           //width: 80%  
+        //input[type="text"],
+        //input[type="password"]
+            //width: 70%    
+
+body 
+  // background-color: $bgcolor
+  height: 100vh
+  position: relative
+  color: $textcolor
+  background: linear-gradient(62deg, #4a4093 0%, #161866f6 100%)
+
+.centerize
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.container
+  border-radius: 15px
+
+.signin-container
+  @extend .centerize
+  @extend .container
+  width: 400px
+  background-color: #fff
+  text-align: center
+  //justify-content: center
+
+
+.login-container
+  @extend .centerize
+  @extend .container
+  width: 400px
+  padding: 20px
+  border-radius: 15px
+  background-color: #fff
+  text-align: center
+  //justify-content: center
+
+.text-center-signin 
+  margin-top: 8%
+  margin-bottom: 8%
+  //border-bottom: 2px solid #4a4093 
+
+.reg-signin-link   
+  @extend .text-center-signin  
+
+  font-size: 0.9em
+
+
+.form-group
+    width: 100%
+    //align-content: center
+
+
+input[type="text"],
+input[type="password"] 
+  padding: 10px
+  border-radius: 10px
+  width: 100%
+  box-sizing: border-box
+
+
+
+
+
+
+
+
+

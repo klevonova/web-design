@@ -1,0 +1,112 @@
+body {
+  color: #ed9b49;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: #4a4093;
+}
+header a {
+  color: #ed9b49;
+}
+
+.logo {
+  font-family: "Monoton";
+  float: left;
+  font-size: 1.5em;
+}
+
+.butt {
+  height: -moz-fit-content;
+  height: fit-content;
+  border-style: solid;
+  border-width: 1px;
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.log {
+  background: #ed9b49;
+  border: #ed9b49;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+.log:hover {
+  background-color: #e98724;
+  border: #e8821b;
+  transition: all 0.3s ease;
+}
+.log:active {
+  background-color: #a65b10;
+}
+
+.reg {
+  background: #ed9b49;
+  border: #ed9b49;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+.reg:hover {
+  background-color: #e98724;
+  border: #e8821b;
+  transition: all 0.3s ease;
+}
+.reg:active {
+  background-color: #a65b10;
+}
+
+.log-reg-buttons {
+  float: right;
+}
+
+.row {
+  margin: 0 auto;
+}
+
+.about-pic-text {
+  width: 85%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  justify-content: center;
+  align-items: center;
+}
+.about-pic-text .text {
+  float: left;
+  margin-top: 5%;
+  color: #4a4093;
+}
+
+.fam-picture {
+  width: 350px;
+  margin-right: 5%;
+  float: right;
+}
+@media (max-width: 576px) {
+  .fam-picture {
+    width: 250px;
+  }
+}
+@media (min-width: 1200px) {
+  .fam-picture {
+    width: 400px;
+  }
+}
+
+.article {
+  color: #4a4093;
+  width: 85%;
+}
+.article h3 {
+  background-color: rgba(123, 170, 164, 0.231372549);
+}
+
+.text-ab {
+  width: 60%;
+  margin-bottom: 2em;
+  background-color: rgba(123, 170, 164, 0.231372549);
+}/*# sourceMappingURL=about.css.map */

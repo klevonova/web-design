@@ -1,0 +1,110 @@
+$bgcolor: #4a4093  
+$bglight:  #7baaa43b
+$textcolor: #ed9b49
+
+$basic-font-family: 'Montserrat', sans-serif
+
+body 
+  //background-color: $bgcolor
+  color: $textcolor
+  
+  font-family: $basic-font-family
+
+header
+    background-color: $bgcolor
+ 
+
+    a
+        color: $textcolor
+
+.logo        
+    font-family: 'Monoton' //, cursive
+    float: left
+    font-size: 1.5em
+
+
+@mixin button-bg($bg) 
+  background: $bg
+  border: $bg
+  color: white
+  padding: 5px 10px
+  border-radius:15px
+  &:hover 
+    background-color: darken($bg, 8%)
+    border: darken($bg, 10%) 
+    transition: all 0.3s ease
+  &:active 
+    background-color: darken($bg, 25%)       
+
+//general button
+.butt
+    height: fit-content
+    border-style: solid
+    border-width: 1px   
+    display: inline-block
+    // font-size:1.3em
+    padding: 5px
+    color: white
+    cursor: pointer
+    transition: background-color 0.3s    
+  
+
+
+.log
+    @include button-bg($textcolor)   
+
+.reg
+    @include button-bg($textcolor)       
+
+        
+.log-reg-buttons
+    float: right
+    //margin-top: 20px 
+    //margin-right: 10% 
+
+
+.row
+    margin: 0 auto
+    //width: 100%
+
+.about-pic-text 
+    width: 85%
+    margin-top: 5% 
+    margin-bottom: 5%
+    justify-content: center
+    align-items: center  
+
+
+    .text
+        float: left    
+        margin-top: 5% 
+        color: $bgcolor
+
+     
+       
+.fam-picture 
+    width: 350px
+    margin-right:5%
+    float: right
+
+    @media(max-width: 576px) 
+        width: 250px
+  
+    @media(min-width: 1200px) 
+        width: 400px//
+
+.article
+    color: $bgcolor 
+    width: 85%
+    //  margin-top: 30%
+
+    h3
+        background-color: $bglight
+    
+    
+        
+      
+.text-ab
+    width: 60%
+    margin-bottom: 2em
+    background-color: $bglight

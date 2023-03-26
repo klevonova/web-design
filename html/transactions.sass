@@ -1,0 +1,84 @@
+@import "navbar"
+@import "about"
+$additional: #7baaa4
+
+body
+    box-sizing: border-box
+    color: $bgcolor
+
+main
+    margin: 0 auto
+    padding: 0
+
+// @media only screen and (max-width: 768px)
+   // padding: 10px
+
+.flex-box
+    display: flex
+    flex-direction: column
+    margin: 0
+
+.create-trans
+    width: min(30rem, 90%)
+    padding: 1rem
+    background-color: $bglight
+    border-radius: 1em
+    margin: auto
+    //justify-content: center
+    // box-shadow: 0.5em 0.25em 0.25em 0.25em darken($bglight, 15%)
+    & > p
+        text-align: center
+
+.trans
+    @extend .flex-box
+    gap: 0.5rem
+
+    input
+        width: 100%
+
+label, p
+    margin: 0
+    margin-bottom: 0
+
+.form-control
+    padding: 0.5em 0.25em
+    border-radius: 0.5em
+
+input[type="text"]
+    @extend .form-control
+    padding: 0.5em
+    box-sizing: border-box
+
+.select-dd
+
+    border-radius: 0,5em
+    border-color: $bglight
+    color: grey
+    //background-color: lighten($bglight, 200%)
+
+.all-trans
+    margin-bottom: 5%
+    margin-top: 8%
+
+.filters
+    display: flex
+    width: fit-content
+    gap: 1em
+    align-items: center
+    justify-content: center
+    margin-bottom: 1em
+    // & > label
+        // display: flex
+
+.table
+    //border: 1px solid black
+    border-radius: 1em
+
+thead
+    th
+        background-color: $bgcolor
+        color: white
+
+// tbody
+    // td
+       // margin: 0.5em
